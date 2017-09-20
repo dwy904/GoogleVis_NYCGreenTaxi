@@ -1,7 +1,3 @@
-################     
-## Question 5 ##
-################ 
-
 # Loading required packages
 library(ggplot2)
 library(readr)
