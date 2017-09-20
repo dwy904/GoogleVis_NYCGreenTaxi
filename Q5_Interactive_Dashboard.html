@@ -1,0 +1,760 @@
+NYC Green Taxi Intra- and Inter - Borough Traffic Visualizations <!-- PieChart generated in R 3.3.1 by googleVis 0.6.2 package -->
+<!-- Sat Mar  4 13:59:41 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataPieChartID18f57ec188b4 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Inter-Borough",
+266177
+],
+[
+"Intra-Borough",
+1192569
+] 
+];
+data.addColumn('string','Traffic Type');
+data.addColumn('number','Count');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataAnnotatedTimeLineID18f51258daf8 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+new Date(2015,8,1),
+7040,
+33411
+],
+[
+new Date(2015,8,2),
+7500,
+34766
+],
+[
+new Date(2015,8,3),
+8208,
+38953
+],
+[
+new Date(2015,8,4),
+9776,
+42965
+],
+[
+new Date(2015,8,5),
+11836,
+45595
+],
+[
+new Date(2015,8,6),
+10443,
+41428
+],
+[
+new Date(2015,8,7),
+7956,
+33016
+],
+[
+new Date(2015,8,8),
+7355,
+34591
+],
+[
+new Date(2015,8,9),
+7892,
+37696
+],
+[
+new Date(2015,8,10),
+8439,
+43390
+],
+[
+new Date(2015,8,11),
+9709,
+45656
+],
+[
+new Date(2015,8,12),
+13280,
+52278
+],
+[
+new Date(2015,8,13),
+11152,
+43115
+],
+[
+new Date(2015,8,14),
+6823,
+31357
+],
+[
+new Date(2015,8,15),
+6933,
+33188
+],
+[
+new Date(2015,8,16),
+8043,
+37593
+],
+[
+new Date(2015,8,17),
+8520,
+40233
+],
+[
+new Date(2015,8,18),
+9969,
+46178
+],
+[
+new Date(2015,8,19),
+13417,
+53496
+],
+[
+new Date(2015,8,20),
+11722,
+44056
+],
+[
+new Date(2015,8,21),
+7042,
+34176
+],
+[
+new Date(2015,8,22),
+6546,
+33263
+],
+[
+new Date(2015,8,23),
+6835,
+33258
+],
+[
+new Date(2015,8,24),
+6406,
+32724
+],
+[
+new Date(2015,8,25),
+8693,
+44190
+],
+[
+new Date(2015,8,26),
+12609,
+51580
+],
+[
+new Date(2015,8,27),
+10582,
+43052
+],
+[
+new Date(2015,8,28),
+6928,
+33841
+],
+[
+new Date(2015,8,29),
+7008,
+35510
+],
+[
+new Date(2015,8,30),
+7515,
+38014
+] 
+];
+data.addColumn('date','Date');
+data.addColumn('number','Inter-Borough');
+data.addColumn('number','Intra-Borough');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataSankeyID18f5444ed079 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Dispatch",
+"Bronx",
+2288
+],
+[
+"Street-Hail",
+"Bronx",
+18321
+],
+[
+"Dispatch",
+"Brooklyn",
+824
+],
+[
+"Street-Hail",
+"Brooklyn",
+131935
+],
+[
+"Dispatch",
+"Manhattan",
+2160
+],
+[
+"Street-Hail",
+"Manhattan",
+51377
+],
+[
+"Dispatch",
+"Queens",
+667
+],
+[
+"Street-Hail",
+"Queens",
+58592
+],
+[
+"Dispatch",
+"Staten Island",
+1
+],
+[
+"Street-Hail",
+"Staten Island",
+12
+],
+[
+"Brooklyn",
+".Bronx",
+754
+],
+[
+"Manhattan",
+".Bronx",
+37088
+],
+[
+"Queens",
+".Bronx",
+2239
+],
+[
+"Bronx",
+".Brooklyn",
+442
+],
+[
+"Manhattan",
+".Brooklyn",
+3324
+],
+[
+"Queens",
+".Brooklyn",
+20201
+],
+[
+"Staten Island",
+".Brooklyn",
+9
+],
+[
+"Bronx",
+".Manhattan",
+18618
+],
+[
+"Brooklyn",
+".Manhattan",
+96978
+],
+[
+"Queens",
+".Manhattan",
+36785
+],
+[
+"Staten Island",
+".Manhattan",
+3
+],
+[
+"Bronx",
+".Queens",
+1548
+],
+[
+"Brooklyn",
+".Queens",
+34851
+],
+[
+"Manhattan",
+".Queens",
+13110
+],
+[
+"Staten Island",
+".Queens",
+1
+],
+[
+"Bronx",
+".Staten Island",
+1
+],
+[
+"Brooklyn",
+".Staten Island",
+176
+],
+[
+"Manhattan",
+".Staten Island",
+15
+],
+[
+"Queens",
+".Staten Island",
+34
+],
+[
+".Bronx",
+"Cash Payment",
+26863
+],
+[
+".Brooklyn",
+"Cash Payment",
+9882
+],
+[
+".Manhattan",
+"Cash Payment",
+50105
+],
+[
+".Queens",
+"Cash Payment",
+17472
+],
+[
+".Staten Island",
+"Cash Payment",
+112
+],
+[
+".Bronx",
+"Credit Card Payment",
+13218
+],
+[
+".Brooklyn",
+"Credit Card Payment",
+14094
+],
+[
+".Manhattan",
+"Credit Card Payment",
+102279
+],
+[
+".Queens",
+"Credit Card Payment",
+32038
+],
+[
+".Staten Island",
+"Credit Card Payment",
+114
+] 
+];
+data.addColumn('string','From');
+data.addColumn('string','To');
+data.addColumn('number','Traffic_Count');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataBarChartID18f510288195 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Bronx",
+20609,
+59580
+],
+[
+"Brooklyn",
+132759,
+424767
+],
+[
+"Manhattan",
+53537,
+364350
+],
+[
+"Queens",
+59259,
+343814
+],
+[
+"Staten Island",
+13,
+58
+] 
+];
+data.addColumn('string','District_Pickup');
+data.addColumn('number','Inter_Borough');
+data.addColumn('number','Intra_Borough');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartPieChartID18f57ec188b4() {
+var data = gvisDataPieChartID18f57ec188b4();
+var options = {};
+options["allowHtml"] = true;
+options["width"] = 300;
+options["height"] = 290;
+options["fill"] = 10;
+options["colors"] = ['pink','lightblue'];
+options["legend"] = {position: 'bottom'};
+options["text"] = [{color:'white'}];
+options["title"] = "NYC Green Taxi Traffic Type";
+
+
+    var chart = new google.visualization.PieChart(
+    document.getElementById('PieChartID18f57ec188b4')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartAnnotatedTimeLineID18f51258daf8() {
+var data = gvisDataAnnotatedTimeLineID18f51258daf8();
+var options = {};
+options["width"] = 800;
+options["height"] = 300;
+options["fill"] = 80;
+options["displayExactValues"] = true;
+options["colors"] = ['pink','lightblue'];
+options["title"] = "Termporal Traffic Distribution by Type";
+
+
+    var chart = new google.visualization.AnnotatedTimeLine(
+    document.getElementById('AnnotatedTimeLineID18f51258daf8')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartSankeyID18f5444ed079() {
+var data = gvisDataSankeyID18f5444ed079();
+var options = {};
+options["width"] = 800;
+options["height"] = 270;
+options["sankey"] = {link: {color: { fill: 'pink' } },
+                            node: { color: { fill: 'pink' }}};
+
+
+    var chart = new google.visualization.Sankey(
+    document.getElementById('SankeyID18f5444ed079')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDrawChart
+function drawChartBarChartID18f510288195() {
+var data = gvisDataBarChartID18f510288195();
+var options = {};
+options["allowHtml"] = true;
+options["isStacked"] = true;
+options["legend"] = "bottom";
+options["colors"] = ['pink','lightblue'];
+options["vAxis"] = {gridlines:{count:3}};
+options["width"] = 400;
+options["height"] = 280;
+options["title"] = "Traffic Types By Districts";
+
+
+    var chart = new google.visualization.BarChart(
+    document.getElementById('BarChartID18f510288195')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartPieChartID18f57ec188b4);
+})();
+function displayChartPieChartID18f57ec188b4() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "annotatedtimeline";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartAnnotatedTimeLineID18f51258daf8);
+})();
+function displayChartAnnotatedTimeLineID18f51258daf8() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "sankey";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartSankeyID18f5444ed079);
+})();
+function displayChartSankeyID18f5444ed079() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBarChartID18f510288195);
+})();
+function displayChartBarChartID18f510288195() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID18f57ec188b4"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartAnnotatedTimeLineID18f51258daf8"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartSankeyID18f5444ed079"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID18f510288195"></script>
+ 
+<table border="0">
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+  
+<div id="PieChartID18f57ec188b4" 
+  style="width: 300; height: 290;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="AnnotatedTimeLineID18f51258daf8" 
+  style="width: 800; height: 300;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<table border="0">
+<tr>
+<td>
+
+<!-- divChart -->
+  
+<div id="SankeyID18f5444ed079" 
+  style="width: 800; height: 270;">
+</div>
+
+</td>
+<td>
+
+<!-- divChart -->
+  
+<div id="BarChartID18f510288195" 
+  style="width: 400; height: 280;">
+</div>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+ Complete Inter - Borough Traffic Path Visualization
